@@ -16,6 +16,8 @@
     font-weight: bold;
     color: aliceblue;
     cursor: pointer;
+    margin-right: 30px;
+    
 }
 
 .logo h1{
@@ -28,14 +30,38 @@
 .logo-color{
     color: rgb(78, 71, 255);
 }
+.section-heading{
+    max-width: 827px;
+    text-align: center;
+    margin: 0 auto;
+}
+.section-heading h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.section-heading p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    color:#757575;
 
+}
+.container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+    margin-top: 50px;
+}
 
 /* main Style */
 header{
     background-color: rgb(245, 247, 255);
     background: url("../web-portfolio-practice/imageportfolio/developer.png"), url("../web-portfolio-practice/imageportfolio/header_bg2.png"),rgb(245, 247, 255);
     background-repeat: no-repeat;
-    background-position: top left,bottom right ;
+    background-position: 23px 38px,bottom right ;
     padding-top: 50px;
 }
 
@@ -66,7 +92,8 @@ nav li a{
     margin: 47px 38px 0 230px;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    width: 90%;
 
 }
 #banner .banner-content{
@@ -83,6 +110,7 @@ nav li a{
     font-weight: bold;
     color: #181818;
     margin-bottom: 20x;
+    text-align: left;
 }
 #banner .banner-content p{
     font-size: 18px;
@@ -90,6 +118,163 @@ nav li a{
     line-height: 30px;
     margin-bottom: 30px;
 }
-#banner .banner-image{
-    max-width: 585px;
+#banner .banner-image img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.btn-gap{
+    gap:20px;
+}
+
+#about, #skills, #resume{
+    padding-top: 130px;
+}
+.about-container{
+    text-align: center;
+    padding: 130px 156px;
+    background-color: rgb(236, 239, 253);
+  
+
+}
+.about-container .about-info{
+    display: flex;
+    justify-content: space-around;
+}
+.info-card p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #757575;
+}
+.info-card h4{
+    font-size:20px;
+
+}
+
+#skills .skills-container .skill-box{
+    display: flex;
+    gap: 24px;
+}
+
+
+.skill-box .skill-card {
+    padding: 30px;
+    /* border: 1px solid red; */
+    box-shadow: 0 6px 50px 0 #00000011;
+    max-width: 267px;
+}
+.skill-card img{
+    max-width: 44px;
+    margin-bottom: 30px;
+}
+
+.skill-card h3{
+    font-size: 20px;
+    color: #181818;
+    margin-bottom: 20px;
+
+}
+
+.skill-card p{
+    font-size: 16px;
+    color: #757575;
+    line-height: 28px;
+}
+
+#resume .resume-container {
+
+    margin-top: 113px;
+    display: flex;
+    gap: 24px;
+}
+
+.resume-container hr {
+    margin: 30px 0
+}
+
+.resume-container .section-title {
+    color: #474747;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.resume-card {
+    max-width: 511px;
+    margin-right: 47px;
+}
+
+.resume-card .card-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #474747
+}
+
+.resume-card .card-info {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #757575;
+}
+
+.resume-card .card-text {
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+}
+
+footer{
+    margin-top: 113px;
+    padding: 130px 0;
+    background-color: rgb(236, 239, 253);
+}
+.footer-container{
+    display: flex;
+    gap: 116px;
+}
+.social{
+    max-width: 562px;
+}
+.social h2{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 20px;
+}
+.social p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.form h2{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 28px;
+}
+.icons a{
+    margin-right: 15px;
+}
+
+
+
+form input[type="name"],form input[type="email"], form textarea{
+    color: #757575;
+    width: 461px;
+    padding: 18px 31px;
+    margin-bottom: 24px;
+    border-radius: 6px;
+    border: none;
+}
+
+.last{
+    width: 100%;
+    background: rgb(78, 71, 255);
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 10px;
+    
 }
