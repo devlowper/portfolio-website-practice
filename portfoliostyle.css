@@ -63,6 +63,11 @@ header{
     background-repeat: no-repeat;
     background-position: 23px 38px,bottom right ;
     padding-top: 50px;
+   
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -283,4 +288,43 @@ form input[type="name"],form input[type="email"], form textarea{
 #banner .banner-image{
     max-width: 585px;
 
+}
+
+
+
+@media screen and (max-width: 768px) {
+  
+    .container, nav {
+        width: 90%;
+    }
+
+ 
+    nav, #banner, .about-info, .skill-box, .resume-container, .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+ 
+    #banner {
+        margin: 20px auto;
+    }
+    #banner .banner-content h1 {
+        font-size: 50px; 
+        text-align: center;
+    }
+
+    
+    .skill-box .skill-card {
+        max-width: 100%;
+    }
+    form input[type="name"], form input[type="email"], form textarea {
+        width: 100%; 
+    }
+
+  
+    nav .menubar {
+        gap: 15px;
+        margin-top: 20px;
+        flex-direction: column;
+    }
 }
