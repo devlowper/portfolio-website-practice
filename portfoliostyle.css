@@ -59,7 +59,7 @@
 /* main Style */
 header{
     background-color: rgb(245, 247, 255);
-    background: url("../web-portfolio-practice/imageportfolio/developer.png"), url("../web-portfolio-practice/imageportfolio/header_bg2.png"),rgb(245, 247, 255);
+    background: url("imagep/developer.png"), url("imagep/header_bg2.png"),rgb(245, 247, 255);
     background-repeat: no-repeat;
     background-position: 23px 38px,bottom right ;
     padding-top: 50px;
@@ -118,6 +118,7 @@ nav li a{
     line-height: 30px;
     margin-bottom: 30px;
 }
+
 #banner .banner-image img{
     max-width: 100%;
     height: auto;
@@ -276,5 +277,10 @@ form input[type="name"],form input[type="email"], form textarea{
     text-align: center;
     color: aliceblue;
     font-size: 10px;
+}
     
+
+#banner .banner-image{
+    max-width: 585px;
+
 }
