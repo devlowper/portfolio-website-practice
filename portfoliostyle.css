@@ -319,7 +319,7 @@ form input[type="name"],form input[type="email"], form textarea{
 
 
 
-
+/*  max-width: 576px */
 @media screen and (max-width: 576px) {
     .btn{
         
@@ -362,9 +362,6 @@ form input[type="name"],form input[type="email"], form textarea{
     margin: 5px;
     flex-wrap: wrap;
 }
-   
-
-    
 
 .section-heading{
     text-align: center;
@@ -424,8 +421,7 @@ form input[type="name"],form input[type="email"], form textarea{
     margin: 0 auto;
     display: block;
     margin-top: 10px;
-    
-  
+
 }
 header{
    background: url("imagep/header_bg2.png"),rgb(245, 247, 255);
@@ -433,7 +429,5 @@ header{
    background-position: bottom right ;
    background-size: contain;
   
-
-    
 }
 }
