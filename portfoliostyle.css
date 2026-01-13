@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 /* share style */
 .font-open-sans{
@@ -15,9 +16,19 @@
     font-size: 18px;
     font-weight: bold;
     color: aliceblue;
+    cursor: pointer;   
+}
+
+.btn-1{
+    border: none;
+    padding: 18px 35px;
+    border-radius: 6px;
+    background:rgb(78, 71, 255);
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
     cursor: pointer;
-    margin-right: 30px;
-    
+
 }
 
 .logo h1{
@@ -140,6 +151,7 @@ nav li a{
     text-align: center;
     padding: 130px 156px;
     background-color: rgb(236, 239, 253);
+    border-radius: 8px;
   
 
 }
@@ -148,12 +160,12 @@ nav li a{
     justify-content: space-around;
 }
 .info-card p{
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 30px;
     color: #757575;
 }
 .info-card h4{
-    font-size:20px;
+    font-size: 1.25rem;
 
 }
 
@@ -166,7 +178,7 @@ nav li a{
 .skill-box .skill-card {
     padding: 30px;
     /* border: 1px solid red; */
-    box-shadow: 0 6px 50px 0 #00000011;
+    box-shadow: 0 6px 50px 0 #00000020;
     max-width: 267px;
 }
 .skill-card img{
@@ -175,14 +187,14 @@ nav li a{
 }
 
 .skill-card h3{
-    font-size: 20px;
+    font-size: 1.8rem;
     color: #181818;
     margin-bottom: 20px;
 
 }
 
 .skill-card p{
-    font-size: 16px;
+    font-size: 1rem;
     color: #757575;
     line-height: 28px;
 }
@@ -292,39 +304,102 @@ form input[type="name"],form input[type="email"], form textarea{
 
 
 
-@media screen and (max-width: 768px) {
-  
-    .container, nav {
-        width: 90%;
-    }
 
- 
-    nav, #banner, .about-info, .skill-box, .resume-container, .footer-container {
+
+@media screen and (max-width: 576px) {
+    .btn{
+        
         flex-direction: column;
-        text-align: center;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
     }
 
- 
-    #banner {
-        margin: 20px auto;
+    .about-container{
+        
+        padding: 20px;
+
     }
-    #banner .banner-content h1 {
-        font-size: 50px; 
-        text-align: center;
+    .about-info{
+        flex-direction: column;
     }
+    .info-card{
+        margin-bottom: 10%;
+    }
+
+    #about, #skills, #resume{
+    padding-top: 50px;
+
+    }
+
+    .container{
+    width: 90%;
+    margin: 0 auto;
+
+    }
+
+    #skills .skills-container .skill-box{
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.skill-box .skill-card {
+    max-width: 100%;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+   
 
     
-    .skill-box .skill-card {
-        max-width: 100%;
-    }
-    form input[type="name"], form input[type="email"], form textarea {
-        width: 100%; 
-    }
 
+.section-heading{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.footer-container, .resume-container, nav, .menubar, #banner{
+    flex-direction: column;
+    
+   
+}
+#resume .resume-container{
+    margin-top: 40px;
+}
+
+
+form input[type="name"],form input[type="email"], form textarea{
+    max-width: 100%; 
+}
+.resume-container{
+    margin-top: 20px;
+}
+.menubar{
+    margin: 40px;
+}
+#banner{
+    margin: 20px;
+    text-align: center;
+}
+#banner .banner-content h1{
+    font-size: 40px;
+
+}
+#banner .banner-image img{
+    width: 100%;
+}
+
+.last{
+    width: 100%;
+}
+.btn-1{
+    margin: 0 auto;
+    display: block;
   
-    nav .menubar {
-        gap: 15px;
-        margin-top: 20px;
-        flex-direction: column;
-    }
+}
+
+
+
+
+
 }
